@@ -7,10 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *tokenTitleLable;
+@property (weak, nonatomic) IBOutlet UILabel *tokenValueLable;
+@property (nonatomic, readwrite) NSString *token;
 
 @end
+
 
 @implementation ViewController
 
@@ -22,6 +27,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+
+- (IBAction)GetDeviceTokenButton:(UIButton *)sender {
+
+    NSLog(@"My token is: %@", (NSString *) _token);
+
 }
 
 @end

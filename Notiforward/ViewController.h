@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
+
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+
+- (IBAction)GetDeviceTokenButton:(UIButton *)sender;
 
 @end
 
